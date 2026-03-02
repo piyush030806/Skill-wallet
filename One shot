@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Engineer | [Your Name] | Portfolio</title>
+    <meta name="description" content="Portfolio of a Mid-Level ML Engineer specializing in Scalable AI, Computer Vision, and LLMs.">
+    
+    <!-- Modern Typography: Inter for UI, Source Code Pro for Technical bits -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-muted: #555555;
+            --accent: #2563eb;
+            --border: #eeeeee;
+            --code-bg: #f6f8fa;
+            --max-width: 850px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg);
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* --- Header & Intro --- */
+        header {
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .links a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        /* --- Global Section Styles --- */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--text-main);
+            display: inline-block;
+        }
+
+        /* --- About --- */
+        .about-text {
+            font-size: 1.05rem;
+            max-width: 750px;
+        }
+
+        /* --- Skills Table --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .skill-cat {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .skill-vals {
+            color: var(--text-muted);
+            font-family: 'Source Code Pro', monospace;
+            font-size: 0.85rem;
+        }
+
+        /* --- Experience Timeline --- */
+        .timeline-item {
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .exp-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .exp-date {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .exp-company {
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .exp-list {
+            list-style: none;
+            margin-left: 0.5rem;
+        }
+
+        .exp-list li {
+            margin-bottom: 0.4rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .exp-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+
+        /* --- Project Case Studies --- */
+        .project-card {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: var(--code-bg);
+            border-radius: 4px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .project-meta {
+            font-size: 0.8rem;
+            font-family: 'Source Code Pro', monospace;
+            background: #e2e8f0;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+
+        .case-study {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+        }
+
+        .label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding-top: 0.2rem;
+        }
+
+        .result-highlight {
+            color: #059669; /* Success Green */
+            font-weight: 600;
+        }
+
+        /* --- Publications & Blogs --- */
+        .pub-item {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .pub-title {
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .pub-title:hover {
+            color: var(--accent);
+        }
+
+        /* --- Contact --- */
+        .contact-footer {
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 600px) {
+            .exp-header { flex-direction: column; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .case-study { grid-template-columns: 1fr; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>[Your Name]</h1>
+            <p class="subtitle">Machine Learning Engineer specializing in Scalable Computer Vision & Distributed Training</p>
+            <div class="links">
+                <a href="mailto:email@example.com">Email</a>
+                <a href="https://github.com/yourusername">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+                <a href="#">Google Scholar</a>
+                <a href="#">Resume (PDF)</a>
+            </div>
+        </header>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About</h2>
+            <p class="about-text">
+                I am a Machine Learning Engineer with 2+ years of industry experience building and deploying production-grade AI systems. 
+                My focus lies at the intersection of <strong>Deep Learning efficiency</strong> and <strong>MLOps scalability</strong>. 
+                Previously at [Previous Company], I optimized inference latency for CV models by 40% and managed multi-GPU training clusters. 
+                I thrive on solving bottlenecks in the ML lifecycle—from data curation to edge deployment.
+            </p>
+        </section>
+
+        <!-- Core Skills -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">Core AI</div>
+                <div class="skill-vals">PyTorch, TensorFlow, JAX, HuggingFace, Scikit-learn</div>
+                
+                <div class="skill-cat">Domains</div>
+                <div class="skill-vals">Computer Vision (YOLO, ViT), NLP (LLMs, RAG), Reinforcement Learning</div>
+                
+                <div class="skill-cat">MLOps/Data</div>
+                <div class="skill-vals">Docker, Kubernetes, AWS (SageMaker), MLflow, DVC, Weights & Biases</div>
+                
+                <div class="skill-cat">Engineering</div>
+                <div class="skill-vals">Python (Expert), C++, CUDA, SQL, FastAPI, Distributed Training</div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="timeline-item">
+                <div class="exp-header">
+                    <span class="exp-title">Machine Learning Engineer II</span>
+                    <span class="exp-date">2022 — Present</span>
+                </div>
+                <div class="exp-company">Tech Giant Corp / AI Lab</div>
+                <ul class="exp-list">
+                    <li>Led the development of a real-time object detection pipeline, achieving a <strong>94% mAP</strong> on custom industrial datasets.</li>
+                    <li>Designed a distributed training strategy using <strong>PyTorch FSDP</strong>, reducing training time for 7B parameter models by 35%.</li>
+                    <li>Architected an automated data-labeling fly-wheel using active learning, reducing manual labeling costs by $50k/quarter.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="exp-header">
+                    <span class="exp-title">Junior ML Research Engineer</span>
+                    <span class="exp-date">2021 — 2022</span>
+                </div>
+                <div class="exp-company">Innovative AI Startup</div>
+                <ul class="exp-list">
+                    <li>Built and deployed a recommendation engine using Graph Neural Networks (GNNs) that increased user CTR by 12%.</li>
+                    <li>Optimized BERT-based models for edge devices using <strong>TensorRT</strong> and Quantization (INT8), resulting in 5x throughput.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects">
+            <h2>Selected AI Projects</h2>
+
+            <!-- Case Study 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-title">Vision-Transformer for Medical Imaging</span>
+                    <span class="project-meta">PyTorch • Med-MNIST • AWS</span>
+                </div>
+                <div class="case-study">
+                    <div class="label">Problem</div>
+                    <div>Standard CNNs struggled with long-range spatial dependencies in high-resolution pathology slides, leading to high false-negatives.</div>
+                    
+                    <div class="label">Approach</div>
+                    <div>Implemented a Hierarchical Vision Transformer (Swin-T) with a custom attention mask. Used Gradient Checkpointing to fit large patches on NVIDIA A100s.</div>
+                    
+                    <div class="label">Results</div>
+                    <div>Achieved <span class="result-highlight">98.2% Accuracy</span>, surpassing previous SOTA by 2.1%. Successfully integrated into the diagnostic assistant app.</div>
+                </div>
+                <div class="links" style="margin-top: 1rem;">
+                    <a href="#">[Code]</a> <a href="#">[Interactive Demo]</a>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-title">Scalable RAG Pipeline for Documentation</span>
+                    <span class="project-meta">LangChain • Vector DB • LLM</span>
+                </div>
+                <div class="case-study">
+                    <div class="label">Problem</div>
+                    <div>Company-wide documentation was fragmented; engineers spent 4+ hours/week searching for internal API specs.</div>
+                    
+                    <div class="label">Approach</div>
+                    <div>Built a Retrieval-Augmented Generation (RAG) system using <strong>Pinecone</strong> and Llama-3. Implemented hybrid search (Semantic + Keyword) for precision.</div>
+                    
+                    <div class="label">Results</div>
+                    <div>Reduced search time by <span class="result-highlight">75%</span>. Handles 5,000+ daily queries with a 92% user satisfaction rating.</div>
+                </div>
+                <div class="links" style="margin-top: 1rem;">
+                    <a href="#">[System Architecture]</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research & Blogs -->
+        <section id="writing">
+            <h2>Research & Writing</h2>
+            <div class="pub-item">
+                <a href="#" class="pub-title">Understanding Distributed Training: Data Parallelism vs. Model Parallelism</a>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Published on Towards Data Science • 15k+ reads</p>
+            </div>
+            <div class="pub-item">
+                <a href="#" class="pub-title">Fine-tuning Llama-2 for Domain-Specific Tasks: A Practical Guide</a>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Self-published Blog • Dec 2023</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <footer class="contact-footer">
+            <p>Built with 0 dependencies. Always open to discussing large-scale ML infra and research.</p>
+            <p style="margin-top: 0.5rem;">&copy; 2024 [Your Name]. All models are wrong, some are useful.</p>
+        </footer>
+    </div>
+
+    <!-- Optional JS for smooth fade-in -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const observerOptions = { threshold: 0.1 };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'all 0.6s ease-out';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
