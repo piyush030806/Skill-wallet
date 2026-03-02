@@ -1,0 +1,19 @@
+Design a premium, modern portfolio website for a Senior Software Architect who is applying for Principal Engineer roles at top tech companies (FAANG-level). The site should clearly reflect deep technical expertise, leadership experience, and strong knowledge of modern web technologies.
+
+Use a sophisticated dark theme with colors like deep navy and charcoal (#0B0F19, #111827), supported by a vibrant accent color (#7C3AED) and subtle gradient highlights (#22D3EE to #A78BFA). The interface should use glassmorphism effects such as frosted panels, soft shadows, and background blur to create a sleek, futuristic look.
+
+The hero section should feel dynamic and impressive, including animated gradient backgrounds, lightweight particle effects, the person’s name, title, tagline, and rotating role descriptions. Add a smooth custom cursor with a trailing effect on desktop (disable on mobile for performance).
+
+Structure the website as a single-page layout with the following sections: Hero, About, Technical Leadership, Architecture Case Studies, Key Projects, Publications & Talks, Experience Timeline, Skills Matrix, and Contact. Include a prominent downloadable resume button and links to GitHub, LinkedIn, and conference talks.
+
+Project and case study sections should highlight real impact, such as scalability improvements, performance gains, cost savings, and systems designed for large numbers of users. Include architecture visuals or system design highlights where relevant.
+
+Add interactive elements like 3D hover effects on project cards, smooth scrolling, section reveal animations, and micro-interactions for buttons and navigation. Include a sticky navigation bar that highlights the current section while scrolling.
+
+Ensure the site is fully responsive across mobile, tablet, laptop, and ultra-wide screens. Provide a dark/light mode toggle that respects the user’s system preference. Accessibility should be considered through semantic HTML, ARIA labels, keyboard navigation, and strong contrast ratios.
+
+Include a skills visualization (such as animated bars or a radar chart) and an experience timeline that highlights promotions and major achievements. Use modern typography with clean, readable fonts.
+
+Optimize the site for performance (fast loading, minimal dependencies, lazy loading where appropriate) and ensure the structure is SEO-friendly. The final result should feel polished, professional, and visually impressive without being cluttered — like a flagship personal brand website for a principal-level engineer.
+
+Provide the complete implementation as a single-page website using clean, production-ready HTML, CSS, and optional JavaScript.
