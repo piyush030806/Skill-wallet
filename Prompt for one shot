@@ -1,0 +1,10 @@
+Create a professional portfolio website for a mid-level Machine Learning Engineer with 2 years of experience, targeting senior AI/ML roles at top tech companies.
+Use a clean, research-oriented design inspired by portfolios of leading AI engineers such as Andrej Karpathy (minimal, content-focused, project-first layout).
+Include sections: About, Core Skills (Python, PyTorch, TensorFlow, NLP, Computer Vision, MLOps), Featured Projects, Research/Blogs, Experience, and Contact.
+Highlight projects with measurable impact (e.g., model accuracy, datasets used, deployment details, tech stack, GitHub links, demos).
+Emphasize problem-solving, scalability, and real-world applications of AI systems.
+Add a “Selected AI/ML Projects” section formatted like case studies (Problem → Approach → Results → Tools).
+Include a timeline-style Experience section showing roles, responsibilities, and achievements.
+Use a professional color palette, responsive layout, and modern typography suitable for recruiters and hiring managers.
+Provide the complete code in a single HTML file with embedded CSS (and optional JavaScript).
+Ensure the design is ATS-friendly, fast-loading, and easy to customize with personal details.
